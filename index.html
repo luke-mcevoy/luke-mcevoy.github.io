@@ -94,10 +94,20 @@
 
     .role {
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 0.15rem 1.5rem;
-      padding: 0.95rem 0;
+      grid-template-columns: 36px 1fr auto;
+      align-items: center;
+      column-gap: 0.85rem;
+      padding: 0.85rem 0;
       border-top: 1px solid var(--line);
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(28, 25, 21, 0.14);
     }
 
     .role:last-child { border-bottom: 1px solid var(--line); }
@@ -151,8 +161,8 @@
       main { padding-top: 2.8rem; }
       h1 { font-size: 2.3rem; }
       .intro { font-size: 1.15rem; }
-      .role { grid-template-columns: 1fr; }
-      .when { text-align: left; margin-top: 0.2rem; }
+      .role { grid-template-columns: 36px 1fr; }
+      .when { grid-column: 2; text-align: left; margin-top: 0.2rem; }
     }
   </style>
 </head>
@@ -173,6 +183,7 @@
       <h2 id="work-heading">Work</h2>
 
       <article class="role">
+        <img class="logo" src="logos/quera.png" width="36" height="36" alt="">
         <div>
           <h3>QuEra Computing</h3>
           <p>QPU Software Engineer · Boston</p>
@@ -181,6 +192,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/tesla.png" width="36" height="36" alt="">
         <div>
           <h3>Tesla</h3>
           <p>Software Engineer Intern · Palo Alto</p>
@@ -189,6 +201,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/qci.png" width="36" height="36" alt="">
         <div>
           <h3>Quantum Computing Inc.</h3>
           <p>Machine Learning Engineer · Hoboken</p>
@@ -197,6 +210,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/stevens.png" width="36" height="36" alt="">
         <div>
           <h3>Stevens Institute of Technology</h3>
           <p>Research and Teaching Assistant · Hoboken</p>
@@ -205,6 +219,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/lenovo.png" width="36" height="36" alt="">
         <div>
           <h3>Lenovo</h3>
           <p>Software Engineer, Machine Learning Intern · Raleigh</p>
@@ -213,6 +228,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/rbc.png" width="36" height="36" alt="">
         <div>
           <h3>RBC Capital Markets</h3>
           <p>Strategic Initiative Lab Winter Analyst · Jersey City</p>
@@ -221,6 +237,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/asml.png" width="36" height="36" alt="">
         <div>
           <h3>ASML</h3>
           <p>Software Engineer Intern · San Diego</p>
@@ -229,6 +246,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/castlepoint.png" width="36" height="36" alt="">
         <div>
           <h3>CastlePoint Analytics</h3>
           <p>Chief Technology Officer · Hoboken</p>
@@ -237,6 +255,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/facebook.png" width="36" height="36" alt="">
         <div>
           <h3>Facebook</h3>
           <p>Social Media Market Intelligence Extern · Remote</p>
@@ -245,6 +264,7 @@
       </article>
 
       <article class="role">
+        <img class="logo" src="logos/ww.png" width="36" height="36" alt="">
         <div>
           <h3>WW (Weight Watchers)</h3>
           <p>Android Engineer Intern · New York</p>
